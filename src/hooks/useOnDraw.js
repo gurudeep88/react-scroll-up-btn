@@ -54,18 +54,6 @@ export function useOnDraw(onDraw){
         initMouseMoveListener();
         initMouseUpListener();
 
-        p.on("data", (data) => {
-            console.log("data: " + JSON.parse(data), data, JSON.stringify(data));
-            let decodedData =  JSON.parse((new TextDecoder("utf-8")).decode(data));
-            if(Object.keys(decodedData.ctx).length){
-                console.log('sec data', data, JSON.stringify(data));
-                onDraw(data);
-            }else{
-                decodedData.ctx = ctx;
-                console.log('first data', ctx, decodedData.ctx, decodedData, data, JSON.stringify(data));
-                onDraw(decodedData);
-            }
-        });
         return ()=>{
             removeMouseEventListeners();
         }
