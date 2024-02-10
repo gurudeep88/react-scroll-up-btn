@@ -1,12 +1,12 @@
 import React from 'react'
 import { useOnDraw } from '../../hooks/useOnDraw'
 
-const Canvas = ({width, height}) => {
+const Canvas = ({width, height, color, lineWidth}) => {
     const {setCanvasRef, onMouseDown} = useOnDraw(onDraw);
 
     function onDraw (data) {
       console.log('data s', data)
-      drawLine(data.ctx, data.point, data.prevPoint, '#000', 5);
+      drawLine(data.ctx, data.point, data.prevPoint, color, lineWidth);
     }
 
     function drawLine(ctx, end, start, color, width) {
