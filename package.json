@@ -26,10 +26,10 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-react": "^7.23.3",
     "@svgr/webpack": "^8.1.0",
-    "babel-core": "^6.21.0",
     "babel-loader": "^7.1.4",
     "css-loader": "^3.5.1",
     "file-loader": "^6.2.0",
