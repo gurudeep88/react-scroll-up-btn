@@ -1,7 +1,8 @@
 export const getDivPositions = (id) => {
+    console.log('id is', id)
     // Get the reference to your div element
     const divElement = document.getElementById(`${id}`);
-
+    console.log('divElement', divElement);
     // Get the bounding rectangle of the div
     const rect = divElement.getBoundingClientRect();
 

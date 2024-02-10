@@ -2,9 +2,10 @@ import React from 'react'
 import { useOnDraw } from '../../hooks/useOnDraw'
 import { getDivPositions } from '../../utils';
 
-const Canvas = ({id, color, lineWidth}) => {
+const Canvas = ({canvasId, color, lineWidth}) => {
     const {setCanvasRef, onMouseDown} = useOnDraw(onDraw);
-    const {width, height} = getDivPositions(id);
+    console.log('canvasId', canvasId)
+    const {width, height} = getDivPositions(canvasId);
 
     function onDraw (data) {
       console.log('data s', data)
