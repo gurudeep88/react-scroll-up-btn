@@ -8,7 +8,7 @@ const ScrollUpButton =({text, onClick}) =>{
                 <p>Scroll Up</p>
                     <button 
                     onClick={onClick}
-                    style={{color: text ===' updates' ? 'yellow': 'red'}}
+                    style={{color: text ==='updates' ? 'yellow': 'red'}}
                     >
                         {text}
                     </button>
