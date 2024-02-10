@@ -1,2 +1,7 @@
 import ScrollUpButton from "./components/ScrollUpButton";
-export default ScrollUpButton;
+import MyComponent from "./components/MyComponent";
+
+export default {
+    ScrollUpButton,
+    MyComponent
+}
