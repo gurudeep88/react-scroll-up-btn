@@ -3,5 +3,8 @@
 			"react",
 			"env",
 			"stage-0"
-	]
+	],
+  "plugins": [
+    "@babel/plugin-transform-nullish-coalescing-operator"
+  ]
 }
