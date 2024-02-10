@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ScrollUpButton =({text, onClick}) =>{
+const ScrollUpButton =({text, onClick, count}) =>{
 
         return(
             <React.Fragment>
@@ -10,7 +10,7 @@ const ScrollUpButton =({text, onClick}) =>{
                     onClick={onClick}
                     style={{color: text ==='updates' ? 'yellow': 'red'}}
                     >
-                        {text}
+                        {text} {count}
                     </button>
                 </div>
             </React.Fragment>
