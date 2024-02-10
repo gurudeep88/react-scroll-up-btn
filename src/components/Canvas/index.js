@@ -24,7 +24,8 @@ const Canvas = ({width, height, color, lineWidth}) => {
     }
 
   return (
-    <div>
+    <div style={{position: 'absolute', zIndex: 10}}>
+        <div></div>
         <canvas 
             width={width}
             height={height}
