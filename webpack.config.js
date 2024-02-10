@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/ScrollUpButton.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve('lib'),
-    filename: 'ScrollUpButton.js',
+    filename: 'index.js',
     library: "react-scroll-up-button",      
     libraryTarget: 'umd',      
     publicPath: '/lib/',      

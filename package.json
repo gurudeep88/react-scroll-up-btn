@@ -2,7 +2,7 @@
   "name": "react-scroll-up-btn",
   "version": "1.0.4",
   "description": "A simple scroll up button built with react",
-  "main": "./lib/ScrollUpButton.js",
+  "main": "./lib/index.js",
   "repository": {
       "type": "git",
       "url" : "https://github.com/weianofsteel/react-scroll-up-button"
