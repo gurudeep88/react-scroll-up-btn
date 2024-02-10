@@ -57,7 +57,7 @@ export function useOnDraw(onDraw){
         return ()=>{
             removeMouseEventListeners();
         }
-    },[onDraw, p])
+    },[onDraw])
 
     function setCanvasRef(ref){
         if(!ref) return;
