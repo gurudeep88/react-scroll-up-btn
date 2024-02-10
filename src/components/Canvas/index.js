@@ -1,14 +1,10 @@
 import React from 'react'
 import { useOnDraw } from '../../hooks/useOnDraw'
-import { getDivPositions } from '../../utils';
 
-const Canvas = ({canvasId, color, lineWidth}) => {
+const Canvas = ({width, height, color, lineWidth}) => {
     const {setCanvasRef, onMouseDown} = useOnDraw(onDraw);
-    console.log('canvasId', canvasId)
-    const {width, height} = getDivPositions(canvasId);
 
     function onDraw (data) {
-      console.log('data s', data)
       drawLine(data.ctx, data.point, data.prevPoint, color, lineWidth);
     }
 
